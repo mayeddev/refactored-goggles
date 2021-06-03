@@ -1,0 +1,10 @@
+-- CreateTable
+CREATE TABLE "Comic" (
+    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "createdAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "updatedAt" DATETIME NOT NULL,
+    "title" TEXT NOT NULL,
+    "genres" TEXT NOT NULL,
+    "type" TEXT NOT NULL,
+    "desc" TEXT NOT NULL
+);
