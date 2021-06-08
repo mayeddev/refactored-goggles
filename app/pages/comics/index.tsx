@@ -23,7 +23,7 @@ export const ComicsList = () => {
         {comics.map((comic) => (
           <li key={comic.id}>
             <Link href={Routes.ShowComicPage({ comicId: comic.id })}>
-              <a>{comic.name}</a>
+              <a>{comic.title}</a>
             </Link>
           </li>
         ))}

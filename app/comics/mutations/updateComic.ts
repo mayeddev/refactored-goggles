@@ -4,7 +4,10 @@ import { z } from "zod"
 
 const UpdateComic = z.object({
   id: z.number(),
-  name: z.string(),
+  title: z.string(),
+  genres: z.string(),
+  type: z.string(),
+  desc: z.string(),
 })
 
 export default resolver.pipe(
